@@ -1,10 +1,53 @@
 return {
-  { "ray-x/Aurora" },
   { "fenetikm/falcon" },
   { "marko-cerovac/material.nvim" },
-  { "miikanissi/modus-themes.nvim", priority = 1000 },
-  { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
-  { "Shatur/neovim-ayu" },
+  { "cosecseccot/midnight-desert.nvim", dependencies = { "rktjmp/lush.nvim" } },
+  { "e-q/okcolors.nvim" },
+  { "challenger-deep-theme/vim" },
+  { "samharju/serene.nvim" },
+  { "sam4llis/nvim-tundra" },
+  { "chriskempson/vim-tomorrow-theme" },
+  {
+    "EdenEast/nightfox.nvim",
+    opts = {
+      options = {
+        styles = { -- Style to be applied to different syntax groups
+          comments = "NONE", -- Value is any valid attr-list value `:help attr-list`
+          conditionals = "bold",
+          constants = "NONE",
+          functions = "NONE",
+          keywords = "bold",
+          numbers = "bold",
+          operators = "NONE",
+          strings = "NONE",
+          types = "NONE",
+          variables = "NONE",
+        },
+      },
+    },
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      no_italic = true,
+      transparent_background = true,
+      styles = {
+        comments = {},
+        conditionals = { "bold" },
+        loops = { "bold" },
+        keywords = { "bold" },
+        operators = { "bold" },
+      },
+    },
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   {
     "zenbones-theme/zenbones.nvim",
     -- Optionally install Lush. Allows for more configuration or extending the colorscheme
@@ -24,7 +67,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "forestbones",
+      colorscheme = "catppuccin",
     },
   },
 }

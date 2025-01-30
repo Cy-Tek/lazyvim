@@ -4,3 +4,7 @@
 
 vim.g.aurora_italic = 1
 vim.g.aurora_bold = 1
+vim.opt.list = false
+vim.opt.listchars = ""
+
+vim.g.termguicolors = true
